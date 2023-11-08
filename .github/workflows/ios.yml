@@ -32,7 +32,8 @@ jobs:
           #device='iPhone 14'
           #device='iPhone 15'
           #device='iPhone SE Simulator'
-          device='Any iOS Simulator Device'
+          #device='Any iOS Simulator Device'
+          device='iPhone 14'
           echo "custom selected device: $device"
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
@@ -48,7 +49,8 @@ jobs:
           #device='iPhone 14'
           #device='iPhone 15'
           #device='iPhone SE Simulator'
-          device='Any iOS Simulator Device'
+          #device='Any iOS Simulator Device'
+          device='iPhone 14'
           echo "custom selected device: $device"
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
